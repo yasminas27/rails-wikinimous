@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 offset-sm-3">
+      <%= form_for(@article) do |f| %>
+      <%= f.label :title %>
+      <%= f.text_field :title, class: 'form-control' %>
+      <div class="content" style="padding: 25px 0">
+        <%= f.label :content %>
+        <%= f.text_field :content, class: 'form-control content-input'%>
+      </div>
+      <%= f.submit class: "btn btn-primary btn-create" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+

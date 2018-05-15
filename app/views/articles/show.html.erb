@@ -1,0 +1,12 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-offset-6">
+      <h1> <%= @article.title %> </h1>
+      <ul>
+        <li><em> Content: </em> <%= @article.content %> </li>
+        <%= link_to'Back to list', articles_path %>
+      </ul>
+    </div>
+  </div>
+</div>
